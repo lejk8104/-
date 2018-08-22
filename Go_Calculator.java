@@ -8,7 +8,6 @@ public class Go_Calculator {
 		double stopper = 0;
 		
 		
-		
 		for(;;)
 		{
 			Scanner scan = new Scanner(System.in);
@@ -52,23 +51,21 @@ public class Go_Calculator {
 				if(((a<=0)||(b<=0)))  // 계산 할 숫자값 입력  오류
 				{
 					System.out.println("나눌수 없습니다. 숫자를 재입력하시오"); //계산 할 숫자를 재입력
+					a=100; b=100;
 					continue;
 				}
 				else
 				{
 					result = a/b; //메세지가 / 라면
 					System.out.println("값 : " +result); //result에 a/b라고 출력함
-					//a = 100; b= 100;        //값을 100으로 치환함
+					a = 100; b= 100;        //값을 100으로 치환함
 				}	
 			}
 			else 
 			{
-				System.out.println("사칙연산을 잘못 입력하였습니다.");  // 사칙연산 입력 오류
-				System.out.print("사칙연산 문자를 입력하시오 : ");                      // 사칙연산 재입력
-				message = scan.nextLine(); 
+				System.out.println("사칙연산을 잘못 입력하였습니다.");  // 사칙연산 입력 오류 
 				continue;
 			}
-			
 			}
 			
 			
